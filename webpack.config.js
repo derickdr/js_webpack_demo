@@ -1,12 +1,16 @@
-const path = require('path');
+const path = require('path'),
+      HTMLWebpackPlugin = require('html-webpack-plugin');
 
 /* from hindreen
 
-entry points
+ entry points
  https://webpack.js.org/concepts/entry-points/
 
  output
  https://webpack.js.org/concepts/output/
+
+ plugins
+ 
 
  */
 
@@ -27,5 +31,13 @@ module.exports = {
         // default is apparently path.join(__dirname, 'build')
         path: path.join(__dirname, 'build'),
         filename: '[name].bundle.js'
-    }
+    },
+    plugins: [
+        new HTMLWebpackPlugin({
+            // renders <title> ${name} </title>
+            title: 'Webpack Demo',
+            // user chunk as script file?
+            chunks: ['client']
+        })
+    ]
 };
