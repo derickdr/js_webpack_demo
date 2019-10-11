@@ -94,7 +94,11 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _b__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./b */ \"./src/b.js\");\n/* harmony import */ var _b__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_b__WEBPACK_IMPORTED_MODULE_0__);\n\nconsole.log('this is file \\'a\\'!')\n\n//# sourceURL=webpack:///./src/a.js?");
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _b__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./b */ "./src/b.js");
+/* harmony import */ var _b__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_b__WEBPACK_IMPORTED_MODULE_0__);
+
+console.log('this is file \'a\'!')
 
 /***/ }),
 
@@ -105,7 +109,8 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _b__
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("console.log('sup i am file \\'b\\'')\n\n\n//# sourceURL=webpack:///./src/b.js?");
+console.log('sup i am file \'b\'')
+
 
 /***/ }),
 
@@ -117,7 +122,10 @@ eval("console.log('sup i am file \\'b\\'')\n\n\n//# sourceURL=webpack:///./src/b
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _a__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./a */ \"./src/a.js\");\n\nconsole.log('hellowurld~!')\n\n//# sourceURL=webpack:///./src/index.js?");
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _a__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./a */ "./src/a.js");
+
+console.log('hellowurld~!')
 
 /***/ })
 
