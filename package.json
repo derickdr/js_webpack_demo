@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack --mode=development --watch"
+    "start": "npm run buld && node dist/main.js",
+    "build": "webpack",
+    "build:watch": "webpack --watch"
   },
   "author": "",
   "license": "ISC",
