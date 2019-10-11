@@ -32,7 +32,7 @@ module.exports = {
         path: path.join(__dirname, 'build'),
         filename: '[name].bundle.js'
     },
-    modules: {
+    module: {
         rules: [{
             test: /\.(js|jsx)$/,
             exclude: /node_modules/,

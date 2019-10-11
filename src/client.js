@@ -1,10 +1,29 @@
 // import './a';
 // console.log('hellowurld~!');
 
-import WebpackLogo from '.images/webpack_logo.';
+import React from 'react';
+import ReactDOM from 'react-dom'
+import WebpackLogo from './images/webpack_logo.png';
+
+// document.addEventListener('DOMCContentLoaded', () => {
+//     const img = document.createElement('img');
+//     img.src = WebpackLogo;
+//     document.body.append(img);
+// });
 
 document.addEventListener('DOMCContentLoaded', () => {
-    const img = document.createElement('img');
-    img.src = WebpackLogo;
-    document.body.append(img);
+    const root = document.createElement('div');
+    document.body.append(root);
+    ReactDOM.render(
+        <img
+            src={WebpackLogo}
+            width='500px'
+            height='100px'
+            style={{
+                borderRadius: '20px',
+                border: '3px solid teal'
+            }}
+        />,
+        root
+    );
 });
