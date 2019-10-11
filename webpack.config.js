@@ -45,12 +45,17 @@ module.exports = {
             options: {
                 outputPath: 'images/'
             }
+        },
+        {
+            test: /\.css$/i,
+            use: ["style-loader", "css-loader"]
         }]
     },
     plugins: [
         new HTMLWebpackPlugin({
             // renders <title> ${name} </title>
             title: 'Webpack Demo',
+            template: path.join(__dirname, 'src', 'index.html'),
             // user chunk as script file?
             chunks: ['client']
         })

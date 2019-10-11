@@ -4,6 +4,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom'
 import WebpackLogo from './images/webpack_logo.png';
+import './css/master.css'
 
 // document.addEventListener('DOMCContentLoaded', () => {
 //     const img = document.createElement('img');
@@ -14,16 +15,5 @@ import WebpackLogo from './images/webpack_logo.png';
 document.addEventListener('DOMCContentLoaded', () => {
     const root = document.createElement('div');
     document.body.append(root);
-    ReactDOM.render(
-        <img
-            src={WebpackLogo}
-            width='500px'
-            height='100px'
-            style={{
-                borderRadius: '20px',
-                border: '3px solid teal'
-            }}
-        />,
-        root
-    );
+    ReactDOM.render(<img src={WebpackLogo} width="500px" height="100px" />, root);
 });
