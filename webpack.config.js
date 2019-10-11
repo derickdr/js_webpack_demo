@@ -10,7 +10,7 @@ const path = require('path'),
  https://webpack.js.org/concepts/output/
 
  plugins
- 
+ https://webpack.js.org/concepts/plugins/
 
  */
 
