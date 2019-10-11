@@ -1,5 +1,5 @@
-import './a'
-console.log('hellowurld~!')
+import './a';
+console.log('hellowurld~!');
 
 
 // website and documentation https://webpack.js.org/

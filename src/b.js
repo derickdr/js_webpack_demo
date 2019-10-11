@@ -1,1 +1,1 @@
-console.log('sup i am file \'b\'')
+console.log('sup i am file \'b\'');
