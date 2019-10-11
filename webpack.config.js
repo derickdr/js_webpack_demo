@@ -16,7 +16,7 @@ const path = require('path'),
 
 module.exports = {
     // default mode is production
-    mode: 'development',
+    mode: 'production',
     devtool: 'none',
 
     entry: {
