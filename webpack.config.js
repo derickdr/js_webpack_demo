@@ -32,6 +32,21 @@ module.exports = {
         path: path.join(__dirname, 'build'),
         filename: '[name].bundle.js'
     },
+    modules: {
+        rules: [{
+            test: /\.(js|jsx)$/,
+            exclude: /node_modules/,
+            // exclude with regular expression to ignore files with loader
+            loader: 'babel-loader'
+        },
+        {
+            test: /\.(png|jpg|gif|webp|svg|jpeg)$/,
+            loader: 'file-loader',
+            options: {
+                outputPath: 'images/'
+            }
+        }]
+    },
     plugins: [
         new HTMLWebpackPlugin({
             // renders <title> ${name} </title>
