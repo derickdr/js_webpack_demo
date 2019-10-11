@@ -1,7 +1,10 @@
-import './a';
-console.log('hellowurld~!');
+// import './a';
+// console.log('hellowurld~!');
 
+import WebpackLogo from '.images/webpack_logo.';
 
-// website and documentation https://webpack.js.org/
-// loaders are used to support other files, webpacker targets .js files by default
-// can find loaders on webpacker site https://webpack.js.org/concepts/loaders/
+document.addEventListener('DOMCContentLoaded', () => {
+    const img = document.createElement('img');
+    img.src = WebpackLogo;
+    document.body.append(img);
+});
