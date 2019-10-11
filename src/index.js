@@ -1,1 +1,2 @@
-console.log("hellowurld~!")
+import './a'
+console.log('hellowurld~!')

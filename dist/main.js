@@ -86,14 +86,38 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./src/a.js":
+/*!******************!*\
+  !*** ./src/a.js ***!
+  \******************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _b__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./b */ \"./src/b.js\");\n/* harmony import */ var _b__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_b__WEBPACK_IMPORTED_MODULE_0__);\n\nconsole.log('this is file \\'a\\'!')\n\n//# sourceURL=webpack:///./src/a.js?");
+
+/***/ }),
+
+/***/ "./src/b.js":
+/*!******************!*\
+  !*** ./src/b.js ***!
+  \******************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("console.log('sup i am file \\'b\\'')\n\n\n//# sourceURL=webpack:///./src/b.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("console.log(\"hellowurld~!\")\n\n//# sourceURL=webpack:///./src/index.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _a__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./a */ \"./src/a.js\");\n\nconsole.log('hellowurld~!')\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ })
 
